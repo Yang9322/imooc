@@ -10,19 +10,19 @@ block content
 						th 导演
 						th 国家
 						th 上映年份
-						//- th time
+						th time
 						th lookup
 						th update
 						th delete
 				tbody
 					each item in movies
 						tr(class='item-id-#{item._id}')
-						td #{item.title}
-						td #{item.doctor}
-						td #{item.country}
-						td #{item.year}
-						//- td #{moment(item.meta.createdAt).format('MM/DD/YYYY')}
-						td: a(target="_blank",href="../movie/#{item._id}") check
-						td: a(target="_blank",href="../admin/update/#{item._id}") update
-						td
-							button.btn.btn-danger.del(type='button',data-id="#{item._id}") delete
+							td #{item.title}
+							td #{item.doctor}
+							td #{item.country}
+							td #{item.year}
+							td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
+							td: a(target="_blank",href="../movie/#{item._id}") check
+							td: a(target="_blank",href="../admin/update/#{item._id}") update
+							td
+								button.btn.btn-danger.del(type='button',data-id="#{item._id}") delete

@@ -9,8 +9,8 @@
     "moment":"",
      "mongoose":"",
      "bower":"",
-    "body-parser": ""
-
+    "body-parser": "",
+"underscore":""
   },
   "devDependencies": {},
   "scripts": {
