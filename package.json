@@ -10,7 +10,8 @@
      "mongoose":"",
      "bower":"",
     "body-parser": "",
-"underscore":""
+    "bcrypt":"",
+    "underscore":""
   },
   "devDependencies": {},
   "scripts": {
